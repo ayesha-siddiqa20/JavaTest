@@ -65,24 +65,4 @@ public class EvenTest {
 		assertEquals("evens(12) more general n", expected, actual);
 	}
 
-	@Test
-	public void testEvens() {
-		// Just to see what happens when a test case fails...
-		// The test case below is not correct!
-		actual = Even.evens(20);
-
-		expected.add(0);
-		expected.add(2);
-		expected.add(4);
-		expected.add(6);
-		expected.add(8);
-		expected.add(10);
-		expected.add(12);
-		expected.add(14);
-		expected.add(16);
-		expected.add(18);
-
-		assertEquals("evens(20)", expected, actual);
-	}
-
 }
