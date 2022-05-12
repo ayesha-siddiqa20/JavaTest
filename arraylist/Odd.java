@@ -23,9 +23,9 @@ public class Odd {
 
 	public static void main(String[] args) {
 		// Print out all odd numbers less than 100
-        ArrayList<Integer> oddLessThan100;
-        oddLessThan100 = odds(100);
-        System.out.println(oddLessThan100);
+        ArrayList<Integer> odds_less_than_30;
+        odds_less_than_30 = odds(30);
+        System.out.println(odds_less_than_30);
 
 	}
 }
