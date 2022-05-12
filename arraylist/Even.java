@@ -10,18 +10,18 @@ public class Even {
 	 * @return An array list of positive evens, less than n [0,2,4,...]
 	 */
 	public static ArrayList<Integer> evens(int n) {
-		ArrayList<Integer> evenNumbers = new ArrayList<Integer>();
+		ArrayList<Integer> even_nums = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			if (i % 2 == 0) {
-				evenNumbers.add(i);
+				even_nums.add(i);
 			}
 		}
-		return evenNumbers;
+		return even_nums;
 	}
 
 	public static void main(String[] args) {
-		ArrayList<Integer> evensLessThan100;
-		evensLessThan100 = evens(100);
-		System.out.println(evensLessThan100);
+		ArrayList<Integer> even_less_than_20;
+		even_less_than_20 = evens(20);
+		System.out.println(even_less_than_20);
 	}
 }
