@@ -21,7 +21,6 @@ public class OddTest {
 	
 	@Test
 	public void testOdds() {
-		// Add test cases here
 		actual = Odd.odds(20);
 		expected.add(1);
 		expected.add(3);
@@ -41,21 +40,21 @@ public class OddTest {
 	@Test
 	public void testOne() {
 		actual = Odd.odds(1);
-		assertEquals("odds(1) should be empty", expected, actual);
+		assertEquals("odds(1) must be empty", expected, actual);
 	}
 	
 	@Test
 	public void testMinimalEvenSet() {
 		actual = Odd.odds(2);
 		expected.add(1);
-		assertEquals("odds(2) smallest non-empty even set", expected, actual);
+		assertEquals("odds(2) gives smallest non-empty even set", expected, actual);
 	}
 
 	@Test
 	public void testMinimalOddSet() {
 		actual = Odd.odds(3);
 		expected.add(1);
-		assertEquals("evens(3) smallest non-empty even set", expected, actual);
+		assertEquals("evens(3) gives smallest non-empty even set", expected, actual);
 	}
 	
 	@Test
@@ -67,7 +66,7 @@ public class OddTest {
 		expected.add(7);
 		expected.add(9);
 		expected.add(11);
-		assertEquals("odds(12) more general n", expected, actual);
+		assertEquals("odds(12) gives more general n", expected, actual);
 	}
 
 	@Test
@@ -79,6 +78,6 @@ public class OddTest {
 		expected.add(7);
 		expected.add(9);
 		expected.add(11);
-		assertEquals("odds(13) more general n", expected, actual);
+		assertEquals("odds(13) gives more general n", expected, actual);
 	}
 }
